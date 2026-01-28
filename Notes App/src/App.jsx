@@ -39,9 +39,10 @@ const App = () => {
   };
 
   return (
-    <div className="min-h-screen bg-linear-to-br from-black via-zinc-900 to-black
-                    flex flex-col lg:flex-row gap-10 py-20 px-6 lg:px-20 text-white">
-
+    <div
+      className="min-h-screen bg-linear-to-br from-black via-zinc-900 to-black
+                    flex flex-col lg:flex-row gap-10 py-20 px-6 lg:px-20 text-white"
+    >
       {/* FORM */}
       <form
         onSubmit={submitHandler}
@@ -89,14 +90,13 @@ const App = () => {
         </h2>
 
         {tasks.length === 0 && (
-          <p className="text-center text-zinc-400 mt-20">
-            No notes available
-          </p>
+          <p className="text-center text-zinc-400 mt-20">No notes available</p>
         )}
 
-        <div className="flex flex-wrap justify-center lg:justify-start
-                        gap-6 max-h-[500px] overflow-y-auto no-scrollbar">
-
+        <div
+          className="flex flex-wrap justify-center lg:justify-start
+                        gap-6 max-h-[500px] overflow-y-auto no-scrollbar"
+        >
           {tasks.map((task) => (
             <div
               key={task.id}
@@ -116,8 +116,10 @@ const App = () => {
                 {task.title}
               </h3>
 
-              <p className="mt-2 text-xs font-semibold text-gray-700
-                            leading-tight line-clamp-4 break-words">
+              <p
+                className="mt-2 text-xs font-semibold text-gray-700
+                            leading-tight line-clamp-4 break-words"
+              >
                 {task.details}
               </p>
             </div>
