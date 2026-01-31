@@ -8,7 +8,7 @@ const App = () => {
 
   const getdata = async () => {
     const response = await axios.get(
-      `https://picsum.photos/v2/list?page=${index}&limit=15`
+      `https://picsum.photos/v2/list?page=${index}&limit=10`
     );
     setUserData(response.data);
   };
@@ -23,6 +23,7 @@ const App = () => {
       <div className="h-48 bg-gray-300" />
       <div className="p-3">
         <div className="h-3 bg-gray-300 rounded w-3/4" />
+        <img src="" alt="" />
       </div>
     </div>
   );
